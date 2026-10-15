@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(53, 53, 53); 
+    color:rgb(255, 255, 255); 
+    font-family: Arial,Helvetica, sans-serif;
+}
+    table, tr,th,td{
+        border: 1px solid rgb(0, 0, 0) ;
+        background-color: white; border-radius: 5px;
+    }
+        
+        
+    .thcolpan{
+        background-color: rgb(150, 150, 150);
+    color: #000;}
+
+
+table{
+    width: 100%;
+}
+tr{
+    height: 50px;
+}
+th{
+    background-color: rgb(202, 202, 202); 
+    color: #000;
+}
+td{
+    color:black;
+    background-color: rgb(233, 233, 233);
+}

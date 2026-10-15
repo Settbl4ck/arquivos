@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22/09</title>
+    <link rel="stylesheet" href="22-09.css">
+
+    
+</head>
+<body>
+    <h1>Aula DOM</h1>
+    <p id="p1"></p>
+    <img src="https://picsum.photos/200" alt="Imagem aleatória">
+    <img id="im2">
+    <p id="p2" class="estilo_p2"></p>
+
+
+
+    <script>
+        let paragrafo = document.getElementById("p1");
+        console.log(paragrafo);
+        paragrafo.innerText = "Aula DOM - alterando o texto do parágrafo";
+        let imagem2 = document.getElementById("im2");
+        imagem2.src = "https://picsum.photos/200";
+
+        let paragrafo2 = document.querySelector("#p2");
+        paragrafo2.innerHTML = "<strong>Parágrafo 2</strong>";
+
+    </script>
+    <script src="22-09.js"></script>
+</body>
+</html>

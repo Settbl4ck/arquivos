@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="stylepet.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Mural de Recados da Escola</h1>
+        <p>Deixe sua mensagem para a comunidade escolar!</p>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Novo Recado</h2>
+            <form id="form-recado" onsubmit="event.preventDefault();">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" placeholder="Digite o assunto">
+                </div>
+
+                <div class="input-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+
+                <!-- Mensagem de Validação / Erro -->
+                <p id="msg-erro" class="erro-oculto"></p>
+
+                <div class="button-group">
+                    <button type="button" id="btn-previsualizar">Visualizar Recado</button>
+                    <button type="button" id="btn-publicar">Publicar Recado</button>
+                </div>
+            </form>
+
+            <!-- Área de Pré-visualização -->
+            <article class="preview-area">
+                <h3>Pré-visualização</h3>
+                <div class="card-recado preview-card">
+                    <h4 id="prev-assunto">Assunto do recado</h4>
+                    <p id="prev-mensagem">A prévia da mensagem aparecerá aqui...</p>
+                    <span id="prev-nome" class="autor">Por: Nome do Autor</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- Mural de Recados Publicados -->
+        <section class="mural-section">
+            <h2>Recados Publicados</h2>
+            <div id="mural" class="mural-container">
+                <!-- Os novos recados serão adicionados aqui via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="scriptpet.js"></script>
+</body>
+</html>

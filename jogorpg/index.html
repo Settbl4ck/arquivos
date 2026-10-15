@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineStream - Filmes & Séries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 CineStream</h1>
+    <p>Cadastre e avalie seus filmes e séries favoritos</p>
+    <div class="header-actions">
+      <button id="btn-tema">🌙 Modo Escuro</button>
+      <button id="btn-toggle-form">🙈 Ocultar Formulário</button>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Seção do Formulário -->
+    <section id="sec-formulario" class="card-painel">
+      <h2>Cadastrar Filme ou Série</h2>
+      
+      <div id="mensagem-erro" class="mensagem-erro oculto">
+        Por favor, preencha todos os campos obrigatórios (*)!
+      </div>
+
+      <form id="form-cadastro">
+        <!-- Tipo: Radio Buttons -->
+        <div class="campo">
+          <label>Tipo *</label>
+          <div class="opcoes-radio">
+            <label class="radio-label">
+              <input type="radio" name="tipo" value="Filme" checked> 🎬 Filme
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="tipo" value="Série"> 📺 Série
+            </label>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="titulo">Título *</label>
+          <input type="text" id="titulo" placeholder="Ex: Stranger Things / Interstellar">
+        </div>
+
+        <div class="campo">
+          <label for="plataforma">Plataforma Disponível *</label>
+          <select id="plataforma">
+            <option value="">Selecione...</option>
+            <option value="Netflix">Netflix</option>
+            <option value="Prime Video">Prime Video</option>
+            <option value="Disney+">Disney+</option>
+            <option value="HBO Max">HBO Max</option>
+            <option value="Apple TV+">Apple TV+</option>
+            <option value="Paramount+">Paramount+</option>
+            <option value="Cinema / Outro">Cinema / Outro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="avaliacao">Sua Avaliação *</label>
+          <select id="avaliacao">
+            <option value="">Selecione a nota...</option>
+            <option value="⭐ 1/5 - Ruim">⭐ 1/5 - Ruim</option>
+            <option value="⭐⭐ 2/5 - Regular">⭐⭐ 2/5 - Regular</option>
+            <option value="⭐⭐⭐ 3/5 - Bom">⭐⭐⭐ 3/5 - Bom</option>
+            <option value="⭐⭐⭐⭐ 4/5 - Muito Bom">⭐⭐⭐⭐ 4/5 - Muito Bom</option>
+            <option value="⭐⭐⭐⭐⭐ 5/5 - Excelente">⭐⭐⭐⭐⭐ 5/5 - Excelente</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem / Resenha (Opcional)</label>
+          <textarea id="mensagem" rows="3" placeholder="Escreva o que achou ou uma breve sinopse..."></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="imagem">URL da Capa (Opcional)</label>
+          <input type="text" id="imagem" placeholder="https://link-da-imagem.jpg">
+        </div>
+
+        <button type="submit" id="btn-cadastrar">Cadastrar</button>
+      </form>
+
+      <!-- Área de Pré-visualização -->
+      <div class="preview-container">
+        <h3>Pré-visualização</h3>
+        <div id="card-preview" class="card-item preview">
+          <img id="prev-img" src="https://via.placeholder.com/300x180?text=Capa+do+Filme/Série" alt="Capa">
+          <div class="card-corpo">
+            <div class="badge-tipo" id="prev-tipo-badge">🎬 Filme</div>
+            <h4 id="prev-titulo">Título</h4>
+            <p><strong>Plataforma:</strong> <span id="prev-plataforma">---</span></p>
+            <p><strong>Avaliação:</strong> <span id="prev-avaliacao">---</span></p>
+            <p id="prev-mensagem-container" class="msg-box oculto">
+              <strong>Mensagem:</strong> <span id="prev-mensagem"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção do Catálogo -->
+    <section class="sec-catalogo">
+      <div class="catalogo-header">
+        <h2>Seu Catálogo</h2>
+        <span id="contador-itens">Total: 0 cadastrado(s)</span>
+      </div>
+      
+      <div id="grid-catalogo" class="grid-cards">
+        <!-- Cards cadastrados dinamicamente pelo JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(103, 60, 31);
+    color: rgb(232, 209, 118);
+}
+
+ol{
+    color: burlywood
+
+}
+
+ul{
+    color: rgb(232, 209, 118);
+}
+
+dl{
+    color: yellow;
+}
+
+
+li,dl{
+    font-size: 30px;
+}
+
+.div_pai{
+    background-color: rebeccapurple;
+
+    margin: auto;
+}
+.div1{
+    background-color: green;
+}
+
+.div2{
+    border: 1px solid white;
+    background-color: aqua;
+    color: black;
+    display: inline-flex;
+}
+
+.div3{
+    border: 1px solid white;
+    background-color: rgb(238, 255, 0);
+    color: black;
+    display: inline-flex;
+}
+

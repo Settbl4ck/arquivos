@@ -1,0 +1,15 @@
+h1{
+color:red
+}
+img{
+width:400px; 
+height:200px;
+}
+
+.suica{
+color:white; 
+background-image: url('suica.jpg'); 
+background-repeat: no-repeat; 
+background-attachment:fixed; 
+background-size:cover;
+}

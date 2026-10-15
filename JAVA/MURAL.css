@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c3c3c3;
+    text-align: left;
+    margin: 0;
+    padding: 30px;
+    color: black;
+}
+
+.NVRD {
+    width: 350px;
+    margin: 0;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+}
+
+.NVRD label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.NVRD input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+.NVRD button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #0f1037;
+    color: white;
+
+    
+}
+
+.perfil {
+    width: 350px;
+    margin: 0;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #666;
+}
