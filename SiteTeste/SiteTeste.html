@@ -16,30 +16,40 @@
   </header>
 
   <section class="hero">
-    <h1>Estrutura Completa de Testes</h1>
-    <h2>HTML5 Semântico + CSS Grid/Flexbox + Manipulação de DOM com JS</h2>
+    <h1>Estrutura de Testes</h1>
+    <h2>HTML + CSS +JS</h2>
   </section>
-
 
   <main>
     <div class="grid-container">
 
+
       <article class="card">
-        <div class="gallery-container">
-          <h2>Minha Galeria Sequencial</h2>
-
-          <!-- Imagem Principal -->
-          <img id="fotoPrincipal" class="main-image" src="imagens/foto1.jpg" alt="Foto da Galeria">
-
-          <!-- Botões de Navegação -->
-          <div class="controls">
-            <button id="btnAnterior">&larr; Anterior</button>
-            <button id="btnProxima">Próxima &rarr;</button>
-          </div>
-
-          <!-- Contador Opcional -->
-          <div id="contador" class="counter">Imagem 1 de 4</div>
+        <div>
+          <img class="card-img" src="imagensfoto1.jpg" alt="Imagem do Card 1">
+          <h3>Card Interativo (Contador)</h3>
+          <p id="cardText">Teste para JavaScript</p>
         </div>
+        <button class="btn-action" id="btnCurtir">Curtir (0)</button>
+      </article>
+
+
+      <article class="card">
+        <div>
+          <img id="fotoPrincipal" class="card-img" src="imagensfoto1.jpg" alt="Foto da Galeria">
+          <h3>Galeria</h3>
+          <p>Teste para JavaScript e CSS</p>
+        </div>
+        <div>
+          <div class="controls">
+            <button class="btn-action" id="btnAnterior">&larr; Anterior</button>
+            <button class="btn-action" id="btnProxima">Próxima &rarr;</button>
+          </div>
+          <div id="contador" class="counter">Imagem 1 de 8</div>
+        </div>
+      </article>
+
+    </div>
   </main>
 
   <footer>
